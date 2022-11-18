@@ -1,0 +1,52 @@
+@use "../utils/" as u;
+
+.center {
+  width: min(100% - u.rem(40), u.rem(1000));
+  margin-inline: auto;
+}
+
+header {
+  margin: u.rem(14) 0;
+}
+
+.hide-for-desktop {
+  @include u.breakpoints-up(medium) {
+    display: none;
+  }
+}
+
+.info {
+  margin-top: u.rem(35);
+}
+.nav-img-container {
+  width: u.rem(35);
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+picture {
+  width: u.rem(300);
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+a.read-more {
+  background-color: var(--soft-red);
+  text-transform: uppercase;
+  font-size: u.rem(12);
+  font-weight: bold;
+  padding: u.rem(11) u.rem(30);
+  color: var(--off-white);
+  letter-spacing: u.rem(2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--Very-dark-blue);
+  }
+}
