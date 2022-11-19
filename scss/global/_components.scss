@@ -57,3 +57,14 @@ a.read-more {
     background-color: var(--Very-dark-blue);
   }
 }
+
+.attribution {
+  font-size: u.rem(11);
+  text-align: center;
+  margin-top: u.rem(12);
+  padding: u.rem(12) u.rem(10) u.rem(15);
+}
+.attribution a {
+  // color: hsl(228, 45%, 44%);
+  color: var(--soft-red);
+}
