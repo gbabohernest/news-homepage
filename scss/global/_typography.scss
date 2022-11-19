@@ -9,7 +9,7 @@ h4 {
 
 h1 {
   // font-size: 35px;
-  font-size: clamp(u.rem(35), u.rem(15) + 2vw, u.rem(47));
+  font-size: clamp(u.rem(28), u.rem(15) + 2vw, u.rem(40));
   font-weight: 800;
   color: var(--Very-dark-blue);
   line-height: 1;

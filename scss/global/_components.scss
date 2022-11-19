@@ -10,6 +10,9 @@ header {
 }
 
 .hide-for-desktop {
+  z-index: 99;
+  cursor: pointer;
+
   @include u.breakpoints-up(medium) {
     display: none;
   }
@@ -19,7 +22,11 @@ header {
   margin-top: u.rem(35);
 }
 .nav-img-container {
-  width: u.rem(35);
+  width: u.rem(40);
+
+  @include u.breakpoints-up(large) {
+    width: u.rem(60);
+  }
   img {
     width: 100%;
     object-fit: contain;

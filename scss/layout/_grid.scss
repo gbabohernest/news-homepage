@@ -54,14 +54,15 @@
 }
 
 .info {
-  display: flex;
-  flex-flow: column wrap;
-  gap: u.rem(20);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: u.rem(40);
 
-  margin-bottom: u.rem(15);
+  // margin-bottom: u.rem(15);
 
   @include u.breakpoints-up(large) {
-    flex-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    gap: u.rem(15);
   }
 
   h4 {
